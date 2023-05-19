@@ -8,97 +8,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="./index.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<body class="bg-dark" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50px">
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-    <div class="container-fluid">
-      <ul class="navbar-nav">
+  <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top container-fluid" style="align-items: center; width: 100%">
+    <div class="container-fluid" style="width: 100%">
+      <ul class="navbar-nav container-fluid" style="justify-content: center; width: 100% ; display: flex;    place-items: center;">
+        <img src="https://cdn.helloasso.com/img/logos/gulbana%20france-521dfb848e6049c28256027d94bcb758.jpg?resize=fill:40:40" style="aspect-ratio: 1; height: 40px; width: 40px;">
+        <li class="nav-item">
+          <a class="nav-link disabled" style="color: #3396d1" href="#section-a-propos">Gulbana France</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#section-a-propos">À propos de nous</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section-nos-actions">Nos actions</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link bg-white dropdown-toggle" href="#section-nos-actions" role="button" data-bs-toggle="dropdown">Nos
+            actions</a>
+          <ul class="dropdown-menu bg-white">
+            <li class="nav-item" class="bg-dark" style="text-align: center;">
+              <a class="nav-link" class="bg-dark" href="#section-puits">🚰 Puits 💧</a>
+            </li>
+            <li class="nav-item" class="bg-dark" style="text-align: center;">
+              <a class="nav-link" class="bg-dark" href="#section-arbres">Plantations</a>
+            </li>
+            <li class="nav-item" class="bg-dark" style="text-align: center;">
+              <a class="nav-link" class="bg-dark" href="#section-repas">Repas chauds</a>
+            </li>
+            <li class="nav-item" class="bg-dark" style="text-align: center;">
+              <a class="nav-link" class="bg-dark" href="#section-alimentaire">Alimentaire</a>
+            </li>
+            <li class="nav-item" class="bg-dark" style="text-align: center;">
+              <a class="nav-link" class="bg-dark" href="#section-refuge">Refuge</a>
+            </li>
+            <li class="nav-item" class="bg-dark" style="text-align: center;">
+              <a class="nav-link" class="bg-dark" href="#section-nos-plus">Nos ➕</a>
+            </li>
+          </ul>
         </li>
+
+
+
         <li class="nav-item">
-          <a class="nav-link" href="#section-puits">🚰 Puits - Association Gulbana France💧</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section-dons">Dons</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section-particuliers">Particuliers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section-organismes">Organismes / Entreprises</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section-info-fisc">Informations fiscalité</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section-reduction-fisc">RÉDUCTION FISCALE</a>
+          <a class="nav-link" href="#section-particuliers">Avantage fiscaux</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#section-team">Notre équipe</a>
         </li>
-      </ul>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <li class="nav-item">
+          <div style="background-color: green; border-radius: 15%; text-align: center;">
+            <a style="color: white;" class="nav-link" href="https://www.helloasso.com/associations/gulbana-france" target="_blank">Faire un don</a>
+          </div>
+        </li>
+
+
+        
+      </ul>      
     </div>
   </nav>
 
-  <div id="section-a-propos" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+  <div id="section-a-propos" class="container-fluid bg-white text-dark" style="padding:100px 20px; text-align: center;">
     <h1>À propos de nous</h1>
 
     <p>
-      L'association Gulbana France est une ONG française depuis 2019 qui a vocation à aider et soutenir les populations en difficulté à travers le monde.
-      En nous soutenant avec vos dons, vous nous permettez d'aider la population locale à se développer localement et éviter les souffrances d'un déracinement et une migration douloureuse.
+      L'association Gulbana France est une ONG française depuis 2019 qui a vocation à aider et soutenir les populations
+      en difficulté à travers le monde.
+      En nous soutenant avec vos dons, vous nous permettez d'aider la population locale à se développer localement et
+      éviter les souffrances d'un déracinement et une migration douloureuse.
     </p>
   </div>
 
-  <div id="section-nos-actions" class="container-fluid bg-primary text-white" style="padding:100px 20px;">
-    <h1>Nos actions</h1>
+  <div id="section-nos-actions" class="container-fluid bg-white text-dark" style="padding:100px 20px;">
+    <h1 style="text-align: center;">Nos actions</h1>
     <ul>
-      <li>construction de Puits pour un accès à l'eau potable (Inde, Népal, Bangladesh, Sri-Lanka, Mauritanie )</li>
-      <li>plantation d'arbres fruitiers (Inde, Bangladesh, Tchad)</li>
-      <li>distribution de repas chauds aux orphelins des centres de Bangladesh, Inde et Niger</li>
-      <li>distribution de viande et de colis alimentaires (Yémen, Syrie, Gaza, Turquie, Bangladesh, Sri-Lanka,
-        Mauritanie, Niger, Tchad, Inde)</li>
       <li>aide à un refuge animalier en Turquie</li>
     </ul>
-  </div>
 
 
-  <div id="section-puits" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
-
-    <h1>🚰 Puits - Association Gulbana France💧</h1>
-
-    <h2>Nos ➕:</h2>
-    <ul>
-      <li>étude de terrain</li>
-      <li>qualité des matériaux neufs</li>
-      <li>suivi dans le temps</li>
-      <li>au coeur de projets de développement et d'accès à l'eau potable pour les familles des villages reculés</li>
-      <li>inscription de votre nom ou du défunt</li>
-    </ul>
-  </div>
 
 
-  <div id="section-dons" class="container-fluid bg-dark text-white" style="padding:100px 20px; color: black;">
-    <h1>Dons</h1>
+    <!--TODO: Find a better way, using magins, offsets, ...-->
+    <br id="section-puits" />
+    <br />
+    <br />
+    <h2 style="text-align: center;">Puits</h2>
+    <p style="text-align: center; color: gray">
+      Construction de Puits pour un accès à l'eau potable (Inde, Népal, Bangladesh, Sri-Lanka, Mauritanie )
+    </p>
     <div class="container">
       <div class="row center-row">
-        <div class="card col-lg" style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
           <!--avatar4-6-->
           <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
             style="width:100%">
           <div class="card-body">
             <h4 class="card-title">INDE</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum nunc non est commodo, ac sollicitudin libero ultrices.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum nunc non est
+              commodo, ac sollicitudin libero ultrices.</p>
             <a href="#" class="btn btn-primary">Puits avec pompe 200€</a>
           </div>
-        </div> 
+        </div>
 
-        <div class="card col-lg" style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
           <!--avatar4-6-->
           <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
             style="width:100%">
@@ -109,7 +127,8 @@
           </div>
         </div>
 
-        <div class="card col-lg" style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
           <!--avatar4-6-->
           <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
             style="width:100%">
@@ -120,7 +139,8 @@
           </div>
         </div>
 
-        <div class="card col-lg" style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
           <!--avatar4-6-->
           <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
             style="width:100%">
@@ -132,80 +152,338 @@
           </div>
         </div>
 
-        <div class="card col-lg" style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
           <!--avatar4-6-->
           <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
             style="width:100%">
           <div class="card-body">
             <h4 class="card-title">SRI LANKA</h4>
-            <p class="card-text">Forage avec structure béton durable 1400€ au coeur de villages pauvres ou à proximité de Madrassa. Entre 10 et 50 familles s'y abreuvent chaque jour.</p>
+            <p class="card-text">Forage avec structure béton durable 1400€ au coeur de villages pauvres ou à proximité
+              de Madrassa. Entre 10 et 50 familles s'y abreuvent chaque jour.</p>
             <a href="#" class="btn btn-primary">Forage avec structure béton durable 1400€</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="section-particuliers" class="container-fluid bg-success text-white" style="padding:100px 20px;">
-    <h1>Particuliers</h1>
-    <p>Vous pouvez bénéficier d'une réduction d'impôt égale à 66% du montant de votre don, dans la
-      limite de 20% de votre revenu imposable.</p>
-  </div>
-
-  <div id="section-organismes" class="container-fluid bg-success text-white" style="padding:100px 20px;">
-    <h1>Organismes / Entreprises</h1>
-    <p>l’ensemble des versements à Gulbana France permet de bénéficier d’une réduction d’impôt sur les
-      sociétés de 60% du montant de ces versements, plafonnée à 20000€ ou 5 ‰ (5 pour mille) du
-      chiffre d'affaires annuel hors taxe de l’entreprise. En cas de dépassement de plafond,
-      l'excédent est reportable sur les 5 exercices suivants.</p>
-  </div>
-
-  <div id="section-info-fisc" class="container-fluid bg-success text-white" style="padding:100px 20px;">
-    <h1>Informations fiscalité</h1>
-    <p>Le don à Gulbana France ouvre droit à une réduction fiscale car il remplit les conditions
-      générales prévues aux articles 200 et 238 bis du code général des impôts.</p>
-  </div>
-
-  <div id="section-reduction-fisc" class="container-fluid bg-success text-white" style="padding:100px 20px;">
-    <h1>RÉDUCTION FISCALE</h1>
-    <p>Le don à Gulbana France ouvre droit à une réduction fiscale car il remplit les conditions
-      générales prévues aux articles 200 et 238 bis du code général des impôts.</p>
-  </div>
-
-  <div id="section-team" class="container-fluid bg-success text-white" style="padding:100px 20px;">
-    <h1>Notre équipe</h1>
-    
-
+    <!--TODO: Find a better way, using magins, offsets, ...-->
+    <br id="section-arbres" />
+    <br />
+    <br />
+    <h2 style="text-align: center;">Plantations</h2>
+    <p style="text-align: center; color: gray">
+      Plantation d'arbres fruitiers (Inde, Bangladesh, Tchad)
+    </p>
     <div class="container">
       <div class="row center-row">
-        <div class="card col-lg" style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
           <!--avatar4-6-->
           <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
             style="width:100%">
           <div class="card-body">
-            <h4 class="card-title">Sibel Naab Topacik</h4>
-            <p class="card-text">
-              <h5>Présidente</h5>
-            </p>
-            <a href="#" class="btn btn-primary">06.61.48.62.18</a>
+            <h4 class="card-title">Inde</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum nunc non est
+              commodo, ac sollicitudin libero ultrices.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
           </div>
         </div>
 
-        <div class="card col-lg" style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
           <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar2.png" alt="Card image"
+          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
             style="width:100%">
           <div class="card-body">
-            <h4 class="card-title">Ayşe AK</h4>
-            <p class="card-text">
-              <h5>Trésorière</h5>  
-            </p>
-            <a href="#" class="btn btn-primary">06.24.70.98.22</a>
+            <h4 class="card-title">Bangladesh</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+          </div>
+        </div>
+
+
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+          <!--avatar4-6-->
+          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
+            style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Tchad</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+
+    <!--TODO: Find a better way, using magins, offsets, ...-->
+    <br id="section-repas" />
+    <br />
+    <br />
+    <h2 style="text-align: center;">Repas chauds</h2>
+    <p style="text-align: center; color: gray">
+      Distribution de repas chauds aux orphelins des centres de Bangladesh, Inde et Niger
+    </p>
+    <div class="container">
+      <div class="row center-row">
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+          <!--avatar4-6-->
+          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
+            style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Bangladesh</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum nunc non est
+              commodo, ac sollicitudin libero ultrices.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+          </div>
+        </div>
+
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+          <!--avatar4-6-->
+          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
+            style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Inde</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+          </div>
+        </div>
+
+
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+          <!--avatar4-6-->
+          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
+            style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Niger</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--TODO: Find a better way, using magins, offsets, ...-->
+    <br id="section-alimentaire" />
+    <br />
+    <br />
+    <h2 style="text-align: center;">Alimentaire</h2>
+    <p style="text-align: center; color: gray">
+      Distribution de viande et de colis alimentaires (Yémen, Syrie, Gaza, Turquie, Bangladesh, Sri-Lanka,
+      Mauritanie, Niger, Tchad, Inde)
+    </p>
+    <div class="container">
+      <div class="row center-row">
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%; ">
+          <!--avatar4-6-->
+          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
+            style="max-height: 100%; width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Yémen, Syrie, Gaza, Turquie, Bangladesh, Sri-Lanka, Mauritanie, Niger, Tchad, Inde
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum nunc non est
+              commodo, ac sollicitudin libero ultrices.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--TODO: Find a better way, using magins, offsets, ...-->
+    <br id="section-refuge" />
+    <br />
+    <br />
+    <h2 style="text-align: center;">Refuge</h2>
+    <p style="text-align: center; color: gray">
+      Aide à un refuge animalier en Turquie
+    </p>
+    <div class="container">
+      <div class="row center-row">
+        <div class="card col-sm"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%; ">
+          <!--avatar4-6-->
+          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
+            style="max-height: 100%; width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Aide à un refuge animalier en Turquie</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum nunc non est
+              commodo, ac sollicitudin libero ultrices.</p>
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <br id="section-nos-plus" />
+    <br />
+    <br />
+    <h3 style="text-align: center">Nos ➕:</h3>
+    <ul>
+      <li>étude de terrain</li>
+      <li>qualité des matériaux neufs</li>
+      <li>suivi dans le temps</li>
+      <li>au coeur de projets de développement et d'accès à l'eau potable pour les familles des villages reculés</li>
+      <li>inscription de votre nom ou du défunt</li>
+    </ul>
+
+
+    <!--TODO: Éviter la répétition en utilisant les outils fourni par Svelte-->
+    <br id="section-particuliers">
+    <br />
+    <br />
+    <h3 style="text-align: center;">Avantage fiscaux</h3>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#avantages-particuliers">Particuliers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#avantages-entreprises">Organismes / Entreprises</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#avantages-reductions">Réduction fiscale</a>
+      </li>
+    </ul>
+    <br>
+
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane container active" id="avantages-particuliers">
+        <h4>Particuliers</h4>
+        <p>Vous pouvez bénéficier d'une réduction d'impôt égale à 66% du montant de votre don, dans la
+          limite de 20% de votre revenu imposable.</p>
+      </div>
+      <div class="tab-pane container fade" id="avantages-entreprises">
+        <h4>Organismes / Entreprises</h4>
+        <p>l’ensemble des versements à Gulbana France permet de bénéficier d’une réduction d’impôt sur les
+          sociétés de 60% du montant de ces versements, plafonnée à 20000€ ou 5 ‰ (5 pour mille) du
+          chiffre d'affaires annuel hors taxe de l’entreprise. En cas de dépassement de plafond,
+          l'excédent est reportable sur les 5 exercices suivants.</p>
+      </div>
+      <div class="tab-pane container fade" id="avantages-reductions">
+        <h4>Réduction fiscale</h4>
+        <p>Le don à Gulbana France ouvre droit à une réduction fiscale car il remplit les conditions
+          générales prévues aux articles 200 et 238 bis du code général des impôts.</p>
+      </div>
+    </div>
+
+
+    <br><br><br>
+
+    <div id="accordion">
+
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+            Particuliers
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            <p>Vous pouvez bénéficier d'une réduction d'impôt égale à 66% du montant de votre don, dans la
+              limite de 20% de votre revenu imposable.</p>
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+            Organismes / Entreprises
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            L'ensemble des versements à Gulbana France permet de bénéficier d’une réduction d’impôt sur les
+          sociétés de 60% du montant de ces versements, plafonnée à 20000€ ou 5 ‰ (5 pour mille) du
+          chiffre d'affaires annuel hors taxe de l’entreprise. En cas de dépassement de plafond,
+          l'excédent est reportable sur les 5 exercices suivants.
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            Informations fiscalité
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Le don à Gulbana France ouvre droit à une réduction fiscale car il remplit les conditions
+          générales prévues aux articles 200 et 238 bis du code général des impôts.
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <br><br><br>
+
+    <ul class="list-group">
+      <li class="list-group-item">Particuliers:<br>&nbsp;&nbsp;&nbsp;&nbsp;Vous pouvez bénéficier d'une réduction d'impôt égale à 66% du montant de votre don, dans la
+        limite de 20% de votre revenu imposable.</li>
+      <li class="list-group-item">Organismes / Entreprises: <br>&nbsp;&nbsp;&nbsp;&nbsp;L’ensemble des versements à Gulbana France permet de bénéficier d’une réduction d’impôt sur les
+        sociétés de 60% du montant de ces versements, plafonnée à 20000€ ou 5&nbsp;‰&nbsp;(5&nbsp;pour&nbsp;mille) du
+        chiffre d'affaires annuel hors taxe de l’entreprise. En cas de dépassement de plafond,
+        l'excédent est reportable sur les 5 exercices suivants.</li>
+      <li class="list-group-item">Réduction fiscale:<br>&nbsp;&nbsp;&nbsp;&nbsp;Le don à Gulbana France ouvre droit à une réduction fiscale car il remplit les conditions
+        générales prévues aux articles 200 et 238 bis du code général des impôts.</li>
+    </ul>
+
+
+    <br  id="section-team">
+    <br><br>
+    <div class="container-fluid bg-white text-dark">
+      <h1 style="text-align: center">Notre équipe</h1>
+      <br>
+
+
+      <div class="container">
+        <div class="row center-row">
+          <div class="card col-lg"
+            style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+            <!--avatar4-6-->
+            <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
+              style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Sibel Naab Topacik</h4>
+              <p class="card-text">
+              <h5>Présidente</h5>
+              </p>
+              <a href="#" class="btn btn-primary">06.61.48.62.18</a>
+            </div>
+          </div>
+
+          <div class="card col-lg"
+            style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+            <!--avatar4-6-->
+            <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar2.png" alt="Card image"
+              style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Ayşe AK</h4>
+              <p class="card-text">
+              <h5>Trésorière</h5>
+              </p>
+              <a href="#" class="btn btn-primary">06.24.70.98.22</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 

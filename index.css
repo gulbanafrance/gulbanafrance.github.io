@@ -1,0 +1,19 @@
+/* Default styles for both nodes */
+.narrow-node {
+    display: none;
+}
+
+.wide-node {
+    display: block;
+}
+
+/* Media query for narrow screens */
+@media screen and (max-width: 600px) {
+    .narrow-node {
+        display: block;
+    }
+
+    .wide-node {
+        display: none;
+    }
+}
