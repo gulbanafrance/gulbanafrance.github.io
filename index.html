@@ -14,10 +14,14 @@
 
 <body class="bg-dark" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50px">
 
-  <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top container-fluid" style="align-items: center; width: 100%">
+  <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top container-fluid"
+    style="align-items: center; width: 100%">
     <div class="container-fluid" style="width: 100%">
-      <ul class="navbar-nav container-fluid" style="justify-content: center; width: 100% ; display: flex;    place-items: center;">
-        <img src="https://cdn.helloasso.com/img/logos/gulbana%20france-521dfb848e6049c28256027d94bcb758.jpg?resize=fill:40:40" style="aspect-ratio: 1; height: 40px; width: 40px;">
+      <ul class="navbar-nav container-fluid"
+        style="justify-content: center; width: 100% ; display: flex;    place-items: center;">
+        <img
+          src="https://cdn.helloasso.com/img/logos/gulbana%20france-521dfb848e6049c28256027d94bcb758.jpg?resize=fill:40:40"
+          style="aspect-ratio: 1; height: 40px; width: 40px;">
         <li class="nav-item">
           <a class="nav-link disabled" style="color: #3396d1" href="#section-a-propos">Gulbana France</a>
         </li>
@@ -25,7 +29,8 @@
           <a class="nav-link" href="#section-a-propos">À propos de nous</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link bg-white dropdown-toggle" href="#section-nos-actions" role="button" data-bs-toggle="dropdown">Nos
+          <a class="nav-link bg-white dropdown-toggle" href="#section-nos-actions" role="button"
+            data-bs-toggle="dropdown">Nos
             actions</a>
           <ul class="dropdown-menu bg-white">
             <li class="nav-item" class="bg-dark" style="text-align: center;">
@@ -62,13 +67,14 @@
 
         <li class="nav-item">
           <div style="background-color: green; border-radius: 15%; text-align: center;">
-            <a style="color: white;" class="nav-link" href="https://www.helloasso.com/associations/gulbana-france" target="_blank">Faire un don</a>
+            <a style="color: white;" class="nav-link" href="https://www.helloasso.com/associations/gulbana-france"
+              target="_blank">Faire un don</a>
           </div>
         </li>
 
 
-        
-      </ul>      
+
+      </ul>
     </div>
   </nav>
 
@@ -86,7 +92,7 @@
   <div id="section-nos-actions" class="container-fluid bg-white text-dark" style="padding:100px 20px;">
     <h1 style="text-align: center;">Nos actions</h1>
     <ul>
-      <li>aide à un refuge animalier en Turquie</li>
+      <li>TODO: aide à un refuge animalier en Turquie</li>
     </ul>
 
 
@@ -96,21 +102,148 @@
     <br id="section-puits" />
     <br />
     <br />
+
+
+
+
     <h2 style="text-align: center;">Puits</h2>
     <p style="text-align: center; color: gray">
       Construction de Puits pour un accès à l'eau potable (Inde, Népal, Bangladesh, Sri-Lanka, Mauritanie )
     </p>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+
+      <style>
+        .___container {
+          height: 300px;
+          /* Set the height of the container */
+        }
+
+        .___child {
+          /* Optional styles for the child elements */
+          padding: 10px;
+          background-color: #f0f0f0;
+          border: 1px solid #ccc;
+        }
+
+        .carousel_item_ {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+        }
+
+        .image_ {
+          max-height: 80vmin;
+          align-self: center;
+          justify-content: center;
+          display: flex;
+          place-items: center;
+
+          /*TODO: Better*/
+          width: 100%;
+        }
+      </style>
+      <div class="carousel-inner">
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-inde-puit-4517.jpeg" alt="2022 - Inde - puit 4517" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> Inde - 2022 </h3>
+            <p>Puit 4517</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2023-inde-puit-4531.jpeg" alt="2023 - Inde - puit 4531" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> Inde - 2023 </h3>
+            <p>Puit 4531</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-nepal-puit-4518.jpeg" alt="2022 - Népal - puit 4518" class="image_">
+          <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> Népal - 2022 </h3>
+            <p>Puit 4518</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item active">
+          <img src="static/2022-bangladesh-puit-4018.jpeg" alt="2022 - Bangladesh - puit 4018" class="image_">
+          <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> Bangladesh - 2022 </h3>
+            <p>Puit 4018</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-mauritanie-puit-4516.jpeg" alt="2022 - Mauritanie - puit 4516" class="image_">
+          <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> Mauritanie - 2022 </h3>
+            <p>Puit 4516</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-srilanka-puit-4021.jpeg" alt="2022 - Sri Lanka - puit 4021" class="image_">
+          <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> Sri Lanka - 2022 </h3>
+            <p>Puit 4021</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-srilanka-puit-4021-2.jpeg" alt="2022 - Sri Lanka - puit 4021" class="image_">
+          <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> Sri Lanka - 2022 </h3>
+            <p>Puit 4021</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-srilanka-puit-4021-3.jpeg" alt="2022 - Sri Lanka - puit 4021" class="image_">
+          <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> Sri Lanka - 2022 </h3>
+            <p>Puit 4021</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <br>
     <div class="container">
       <div class="row center-row">
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
           <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
           <div class="card-body">
-            <h4 class="card-title">INDE</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum nunc non est
-              commodo, ac sollicitudin libero ultrices.</p>
+            <h4 class="card-title">Inde</h4>
+            <p class="card-text">
+              <a data-bs-target="#demo" data-bs-slide-to="0" href="javascript:void();">2022</a><br>
+              <a data-bs-target="#demo" data-bs-slide-to="1" href="javascript:void();">2023</a>
+            </p>
             <a href="#" class="btn btn-primary">Puits avec pompe 200€</a>
           </div>
         </div>
@@ -118,11 +251,22 @@
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
           <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
           <div class="card-body">
-            <h4 class="card-title">NÉPAL</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h4 class="card-title">Népal</h4>
+            <p class="card-text">
+              <a data-bs-target="#demo" data-bs-slide-to="2" href="javascript:void();">2022</a>
+            </p>
+            <a href="#" class="btn btn-primary">Puits avec pompe 200€</a>
+          </div>
+        </div>
+
+        <div class="card col-lg"
+          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
+          <div class="card-body">
+            <h4 class="card-title">Bangladesh</h4>
+            <p class="card-text">
+              <a data-bs-target="#demo" data-bs-slide-to="3" href="javascript:void();">2022</a>
+            </p>
             <a href="#" class="btn btn-primary">Puits avec pompe 200€</a>
           </div>
         </div>
@@ -130,36 +274,24 @@
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
           <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
           <div class="card-body">
-            <h4 class="card-title">BANGLADESH</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="btn btn-primary">Puits avec pompe 200€</a>
-          </div>
-        </div>
-
-        <div class="card col-lg"
-          style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
-          <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">MAURITANIE</h4>
-            <p class="card-text">Entre 500 et 800
-              personnes s'abreuvent de cette eau tous les jours.</p>
+            <h4 class="card-title">Mauritanie</h4>
+            <p class="card-text">
+              <a data-bs-target="#demo" data-bs-slide-to="4" href="javascript:void();">2022</a><br>
+              Entre 500 et 800 personnes s'abreuvent de cette eau tous les jours.</p>
             <a href="#" class="btn btn-primary">Puits forage 2100€</a>
           </div>
         </div>
 
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
-          <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
           <div class="card-body">
             <h4 class="card-title">SRI LANKA</h4>
-            <p class="card-text">Forage avec structure béton durable 1400€ au coeur de villages pauvres ou à proximité
+            <p class="card-text">
+              <a data-bs-target="#demo" data-bs-slide-to="5" href="javascript:void();">2022 - début forage</a><br>
+              <a data-bs-target="#demo" data-bs-slide-to="6" href="javascript:void();">2022 - forage</a><br>
+              <a data-bs-target="#demo" data-bs-slide-to="7" href="javascript:void();">2022 - puit complet</a><br>
+              Forage avec structure béton durable 1400€ au coeur de villages pauvres ou à proximité
               de Madrassa. Entre 10 et 50 familles s'y abreuvent chaque jour.</p>
             <a href="#" class="btn btn-primary">Forage avec structure béton durable 1400€</a>
           </div>
@@ -398,8 +530,8 @@
           </div>
         </div>
       </div>
-    
-      
+
+
       <div class="card">
         <div class="card-header">
           <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
@@ -409,13 +541,13 @@
         <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
           <div class="card-body">
             L'ensemble des versements à Gulbana France permet de bénéficier d’une réduction d’impôt sur les
-          sociétés de 60% du montant de ces versements, plafonnée à 20000€ ou 5 ‰ (5 pour mille) du
-          chiffre d'affaires annuel hors taxe de l’entreprise. En cas de dépassement de plafond,
-          l'excédent est reportable sur les 5 exercices suivants.
+            sociétés de 60% du montant de ces versements, plafonnée à 20000€ ou 5 ‰ (5 pour mille) du
+            chiffre d'affaires annuel hors taxe de l’entreprise. En cas de dépassement de plafond,
+            l'excédent est reportable sur les 5 exercices suivants.
           </div>
         </div>
       </div>
-    
+
       <div class="card">
         <div class="card-header">
           <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
@@ -425,27 +557,30 @@
         <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
           <div class="card-body">
             Le don à Gulbana France ouvre droit à une réduction fiscale car il remplit les conditions
-          générales prévues aux articles 200 et 238 bis du code général des impôts.
+            générales prévues aux articles 200 et 238 bis du code général des impôts.
           </div>
         </div>
       </div>
-    
+
     </div>
     <br><br><br>
 
     <ul class="list-group">
-      <li class="list-group-item">Particuliers:<br>&nbsp;&nbsp;&nbsp;&nbsp;Vous pouvez bénéficier d'une réduction d'impôt égale à 66% du montant de votre don, dans la
+      <li class="list-group-item">Particuliers:<br>&nbsp;&nbsp;&nbsp;&nbsp;Vous pouvez bénéficier d'une réduction
+        d'impôt égale à 66% du montant de votre don, dans la
         limite de 20% de votre revenu imposable.</li>
-      <li class="list-group-item">Organismes / Entreprises: <br>&nbsp;&nbsp;&nbsp;&nbsp;L’ensemble des versements à Gulbana France permet de bénéficier d’une réduction d’impôt sur les
+      <li class="list-group-item">Organismes / Entreprises: <br>&nbsp;&nbsp;&nbsp;&nbsp;L’ensemble des versements à
+        Gulbana France permet de bénéficier d’une réduction d’impôt sur les
         sociétés de 60% du montant de ces versements, plafonnée à 20000€ ou 5&nbsp;‰&nbsp;(5&nbsp;pour&nbsp;mille) du
         chiffre d'affaires annuel hors taxe de l’entreprise. En cas de dépassement de plafond,
         l'excédent est reportable sur les 5 exercices suivants.</li>
-      <li class="list-group-item">Réduction fiscale:<br>&nbsp;&nbsp;&nbsp;&nbsp;Le don à Gulbana France ouvre droit à une réduction fiscale car il remplit les conditions
+      <li class="list-group-item">Réduction fiscale:<br>&nbsp;&nbsp;&nbsp;&nbsp;Le don à Gulbana France ouvre droit à
+        une réduction fiscale car il remplit les conditions
         générales prévues aux articles 200 et 238 bis du code général des impôts.</li>
     </ul>
 
 
-    <br  id="section-team">
+    <br id="section-team">
     <br><br>
     <div class="container-fluid bg-white text-dark">
       <h1 style="text-align: center">Notre équipe</h1>
