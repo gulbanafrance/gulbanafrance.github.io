@@ -124,6 +124,7 @@
         <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
       </div>
 
       <!-- The slideshow/carousel -->
@@ -159,7 +160,7 @@
         }
       </style>
       <div class="carousel-inner">
-        <div class="carousel_item carousel-item">
+        <div class="carousel_item carousel-item active">
           <img src="static/2022-inde-puit-4517.jpeg" alt="2022 - Inde - puit 4517" class="image_"> <!--d-block w-100-->
           <div class="carousel-caption">
             <h3> Inde - 2022 </h3>
@@ -181,11 +182,19 @@
             <p>Puit 4518</p>
           </div>
         </div>
-        <div class="carousel_item carousel-item active">
+        <div class="carousel_item carousel-item">
           <img src="static/2022-bangladesh-puit-4018.jpeg" alt="2022 - Bangladesh - puit 4018" class="image_">
           <!--d-block w-100-->
           <div class="carousel-caption">
             <h3> Bangladesh - 2022 </h3>
+            <p>Puit 4018</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2023-bangladesh-puit-4539.jpeg" alt="2023 - Bangladesh - puit 4018" class="image_">
+          <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> Bangladesh - 4539 </h3>
             <p>Puit 4018</p>
           </div>
         </div>
@@ -265,7 +274,8 @@
           <div class="card-body">
             <h4 class="card-title">Bangladesh</h4>
             <p class="card-text">
-              <a data-bs-target="#demo" data-bs-slide-to="3" href="javascript:void();">2022</a>
+              <a data-bs-target="#demo" data-bs-slide-to="3" href="javascript:void();">2022</a><br>
+              <a data-bs-target="#demo" data-bs-slide-to="4" href="javascript:void();">2023</a>
             </p>
             <a href="#" class="btn btn-primary">Puits avec pompe 200€</a>
           </div>
@@ -277,7 +287,7 @@
           <div class="card-body">
             <h4 class="card-title">Mauritanie</h4>
             <p class="card-text">
-              <a data-bs-target="#demo" data-bs-slide-to="4" href="javascript:void();">2022</a><br>
+              <a data-bs-target="#demo" data-bs-slide-to="5" href="javascript:void();">2022</a><br>
               Entre 500 et 800 personnes s'abreuvent de cette eau tous les jours.</p>
             <a href="#" class="btn btn-primary">Puits forage 2100€</a>
           </div>
@@ -288,9 +298,9 @@
           <div class="card-body">
             <h4 class="card-title">SRI LANKA</h4>
             <p class="card-text">
-              <a data-bs-target="#demo" data-bs-slide-to="5" href="javascript:void();">2022 - début forage</a><br>
-              <a data-bs-target="#demo" data-bs-slide-to="6" href="javascript:void();">2022 - forage</a><br>
-              <a data-bs-target="#demo" data-bs-slide-to="7" href="javascript:void();">2022 - puit complet</a><br>
+              <a data-bs-target="#demo" data-bs-slide-to="6" href="javascript:void();">2022 - début forage</a><br>
+              <a data-bs-target="#demo" data-bs-slide-to="7" href="javascript:void();">2022 - forage</a><br>
+              <a data-bs-target="#demo" data-bs-slide-to="8" href="javascript:void();">2022 - puit complet</a><br>
               Forage avec structure béton durable 1400€ au coeur de villages pauvres ou à proximité
               de Madrassa. Entre 10 et 50 familles s'y abreuvent chaque jour.</p>
             <a href="#" class="btn btn-primary">Forage avec structure béton durable 1400€</a>
@@ -300,6 +310,7 @@
     </div>
 
     <!--TODO: Find a better way, using magins, offsets, ...-->
+    <!--TODO: Ajout des images carrés-->
     <br id="section-arbres" />
     <br />
     <br />
@@ -307,13 +318,158 @@
     <p style="text-align: center; color: gray">
       Plantation d'arbres fruitiers (Inde, Bangladesh, Tchad)
     </p>
+
+
+
+    <!-- Carousel -->
+    <div id="treesslideshow" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <!--TODO: il manque un "unknown" et deux "maybe"-->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="6"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="7"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="8"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="9"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="10"></button>
+        <button type="button" data-bs-target="#treesslideshow" data-bs-slide-to="11"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+
+      <style>
+        .___container {
+          height: 300px;
+          /* Set the height of the container */
+        }
+
+        .___child {
+          /* Optional styles for the child elements */
+          padding: 10px;
+          background-color: #f0f0f0;
+          border: 1px solid #ccc;
+        }
+
+        .carousel_item_ {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+        }
+
+        .image_ {
+          max-height: 80vmin;
+          align-self: center;
+          justify-content: center;
+          display: flex;
+          place-items: center;
+
+          /*TODO: Better*/
+          width: 100%;
+        }
+      </style>
+      <div class="carousel-inner">
+        <div class="carousel_item carousel-item active">
+          <img src="static/2022-bangladesh-arbres-0.jpeg" alt="2022 - Bangladesh" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Bangladesh </h3>
+            <p>Plantation de 10 Arbres Fruitiers</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-bangladesh-arbres-1.jpeg" alt="2022 - Bangladesh" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Bangladesh </h3>
+            <p>Plantation de 25 Arbres Fruitiers</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-bangladesh-arbres-2.jpeg" alt="2022 - Bangladesh" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Bangladesh </h3>
+            <p>Plantation de 25 Arbres Fruitiers</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-niger-arbres-1.jpeg" alt="2022 - Niger" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Niger </h3>
+            <p>Plantation de 40 Arbres Fruitiers</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-niger-arbres-2.jpeg" alt="2022 - Niger" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Niger </h3>
+            <p>Plantation de 40 Arbres Fruitiers</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-niger-arbres-3.jpeg" alt="2022 - Niger" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Niger </h3>
+            <p>Plantation de 40 Arbres Fruitiers</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-niger-arbres-4.jpeg" alt="2022 - Niger" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Niger </h3>
+            <p>Plantation de 40 Arbres Fruitiers</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-sri-lanka-arbres.jpeg" alt="2022 - Sri Lanka" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Sri Lanka </h3>
+            <p>Plantation de 100 Arbres</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-srilanka-arbre.jpeg" alt="2022 - Sri Lanka" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Sri Lanka </h3>
+            <p>Plantation de 100 Arbres</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-tchad-arbres-1.jpeg" alt="2022 - Tchad" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Tchad </h3>
+            <p>Plantation de 10 Arbres Fruitiers</p>
+          </div>
+        </div>
+        <div class="carousel_item carousel-item">
+          <img src="static/2022-tchad-arbres-2.jpeg" alt="2022 - Tchad" class="image_"> <!--d-block w-100-->
+          <div class="carousel-caption">
+            <h3> 2022 - Tchad </h3>
+            <p>Plantation de 10 Arbres Fruitiers</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#treesslideshow" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#treesslideshow" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+
+
+    <br>
     <div class="container">
       <div class="row center-row">
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
-          <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
           <div class="card-body">
             <h4 class="card-title">Inde</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum nunc non est
@@ -324,9 +480,6 @@
 
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
-          <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
           <div class="card-body">
             <h4 class="card-title">Bangladesh</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -337,9 +490,6 @@
 
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
-          <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
           <div class="card-body">
             <h4 class="card-title">Tchad</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -362,9 +512,6 @@
       <div class="row center-row">
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
-          <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
           <div class="card-body">
             <h4 class="card-title">Bangladesh</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum nunc non est
@@ -375,9 +522,6 @@
 
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
-          <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
           <div class="card-body">
             <h4 class="card-title">Inde</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -388,9 +532,6 @@
 
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%;">
-          <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="width:100%">
           <div class="card-body">
             <h4 class="card-title">Niger</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -416,8 +557,6 @@
         <div class="card col-lg"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%; ">
           <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="max-height: 100%; width:100%">
           <div class="card-body">
             <h4 class="card-title">Yémen, Syrie, Gaza, Turquie, Bangladesh, Sri-Lanka, Mauritanie, Niger, Tchad, Inde
             </h4>
@@ -443,9 +582,6 @@
       <div class="row center-row">
         <div class="card col-sm"
           style="color: black; width:400px; margin-bottom: 10px; margin-right: 10px; width: 100%; ">
-          <!--avatar4-6-->
-          <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image"
-            style="max-height: 100%; width:100%">
           <div class="card-body">
             <h4 class="card-title">Aide à un refuge animalier en Turquie</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum nunc non est
@@ -477,41 +613,6 @@
     <br />
     <h3 style="text-align: center;">Avantage fiscaux</h3>
 
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" data-bs-toggle="tab" href="#avantages-particuliers">Particuliers</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="tab" href="#avantages-entreprises">Organismes / Entreprises</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="tab" href="#avantages-reductions">Réduction fiscale</a>
-      </li>
-    </ul>
-    <br>
-
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div class="tab-pane container active" id="avantages-particuliers">
-        <h4>Particuliers</h4>
-        <p>Vous pouvez bénéficier d'une réduction d'impôt égale à 66% du montant de votre don, dans la
-          limite de 20% de votre revenu imposable.</p>
-      </div>
-      <div class="tab-pane container fade" id="avantages-entreprises">
-        <h4>Organismes / Entreprises</h4>
-        <p>l’ensemble des versements à Gulbana France permet de bénéficier d’une réduction d’impôt sur les
-          sociétés de 60% du montant de ces versements, plafonnée à 20000€ ou 5 ‰ (5 pour mille) du
-          chiffre d'affaires annuel hors taxe de l’entreprise. En cas de dépassement de plafond,
-          l'excédent est reportable sur les 5 exercices suivants.</p>
-      </div>
-      <div class="tab-pane container fade" id="avantages-reductions">
-        <h4>Réduction fiscale</h4>
-        <p>Le don à Gulbana France ouvre droit à une réduction fiscale car il remplit les conditions
-          générales prévues aux articles 200 et 238 bis du code général des impôts.</p>
-      </div>
-    </div>
-
 
     <br><br><br>
 
@@ -519,11 +620,9 @@
 
       <div class="card">
         <div class="card-header">
-          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-            Particuliers
-          </a>
+          Particuliers
         </div>
-        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div>
           <div class="card-body">
             <p>Vous pouvez bénéficier d'une réduction d'impôt égale à 66% du montant de votre don, dans la
               limite de 20% de votre revenu imposable.</p>
@@ -531,14 +630,11 @@
         </div>
       </div>
 
-
       <div class="card">
         <div class="card-header">
-          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
-            Organismes / Entreprises
-          </a>
+          Organismes / Entreprises
         </div>
-        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div>
           <div class="card-body">
             L'ensemble des versements à Gulbana France permet de bénéficier d’une réduction d’impôt sur les
             sociétés de 60% du montant de ces versements, plafonnée à 20000€ ou 5 ‰ (5 pour mille) du
@@ -550,11 +646,9 @@
 
       <div class="card">
         <div class="card-header">
-          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
-            Informations fiscalité
-          </a>
+          Informations fiscalité
         </div>
-        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div>
           <div class="card-body">
             Le don à Gulbana France ouvre droit à une réduction fiscale car il remplit les conditions
             générales prévues aux articles 200 et 238 bis du code général des impôts.
@@ -563,22 +657,6 @@
       </div>
 
     </div>
-    <br><br><br>
-
-    <ul class="list-group">
-      <li class="list-group-item">Particuliers:<br>&nbsp;&nbsp;&nbsp;&nbsp;Vous pouvez bénéficier d'une réduction
-        d'impôt égale à 66% du montant de votre don, dans la
-        limite de 20% de votre revenu imposable.</li>
-      <li class="list-group-item">Organismes / Entreprises: <br>&nbsp;&nbsp;&nbsp;&nbsp;L’ensemble des versements à
-        Gulbana France permet de bénéficier d’une réduction d’impôt sur les
-        sociétés de 60% du montant de ces versements, plafonnée à 20000€ ou 5&nbsp;‰&nbsp;(5&nbsp;pour&nbsp;mille) du
-        chiffre d'affaires annuel hors taxe de l’entreprise. En cas de dépassement de plafond,
-        l'excédent est reportable sur les 5 exercices suivants.</li>
-      <li class="list-group-item">Réduction fiscale:<br>&nbsp;&nbsp;&nbsp;&nbsp;Le don à Gulbana France ouvre droit à
-        une réduction fiscale car il remplit les conditions
-        générales prévues aux articles 200 et 238 bis du code général des impôts.</li>
-    </ul>
-
 
     <br id="section-team">
     <br><br>
