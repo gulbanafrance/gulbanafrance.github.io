@@ -10,75 +10,107 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <link href="./index.css" rel="stylesheet">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var navbarToggler = document.querySelector(".navbar-toggler");
+      navbarToggler.addEventListener("click", function () {
+        var navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("navbar-expanded");
+      });
+    });
+
+
+  </script>
+  <style>
+    @media (max-width: 990px) {
+      .navbar-expand-custom {
+        flex-direction: column;
+      }
+
+      .navbar-expand-custom .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .navbar-expand-custom .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+      }
+
+      .navbar-expand-custom .navbar-collapse {
+        padding: 0;
+      }
+
+      .navbar-expand-custom .navbar-toggler {
+        display: block;
+      }
+
+      .navbar-expand-custom.navbar-expanded .navbar-nav {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 
 <body class="bg-dark" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50px">
-
-  <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top container-fluid"
-    style="align-items: center; width: 100%">
-    <div class="container-fluid" style="width: 100%">
-      <ul class="navbar-nav container-fluid"
-        style="justify-content: center; width: 100% ; display: flex;    place-items: center;">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
         <img
           src="https://cdn.helloasso.com/img/logos/gulbana%20france-521dfb848e6049c28256027d94bcb758.jpg?resize=fill:40:40"
-          style="aspect-ratio: 1; height: 40px; width: 40px;">
-        <li class="nav-item">
-          <a class="nav-link disabled" style="color: #3396d1" href="#section-a-propos">Gulbana France</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section-a-propos">À propos de nous</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link bg-white dropdown-toggle" href="#section-nos-actions" role="button"
-            data-bs-toggle="dropdown">Nos
-            actions</a>
-          <ul class="dropdown-menu bg-white">
-            <li class="nav-item" class="bg-dark" style="text-align: center;">
-              <a class="nav-link" class="bg-dark" href="#section-puits">🚰 Puits 💧</a>
-            </li>
-            <li class="nav-item" class="bg-dark" style="text-align: center;">
-              <a class="nav-link" class="bg-dark" href="#section-arbres">Plantations</a>
-            </li>
-            <li class="nav-item" class="bg-dark" style="text-align: center;">
-              <a class="nav-link" class="bg-dark" href="#section-repas">Repas chauds</a>
-            </li>
-            <li class="nav-item" class="bg-dark" style="text-align: center;">
-              <a class="nav-link" class="bg-dark" href="#section-alimentaire">Alimentaire</a>
-            </li>
-            <li class="nav-item" class="bg-dark" style="text-align: center;">
-              <a class="nav-link" class="bg-dark" href="#section-refuge">Refuge</a>
-            </li>
-            <li class="nav-item" class="bg-dark" style="text-align: center;">
-              <a class="nav-link" class="bg-dark" href="#section-nos-plus">Nos ➕</a>
-            </li>
-          </ul>
-        </li>
+          style="aspect-ratio: 1; height: 40px; width: 40px;"> Gulbana France
+      </a>
+      <div class="order-1 order-md-2">
+        <a href="https://www.helloasso.com/associations/gulbana-france" target="_blank" class="btn btn-success"
+          role="button">Faire un don</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse order-2 order-md-1" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section-a-propos">À propos de nous</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#section-nos-actions" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown">
+              Nos actions
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item" class="bg-dark" style="text-align: center;">
+                <a class="nav-link" class="bg-dark" href="#section-puits">🚰 Puits 💧</a>
+              </li>
+              <li class="nav-item" class="bg-dark" style="text-align: center;">
+                <a class="nav-link" class="bg-dark" href="#section-arbres">Plantations</a>
+              </li>
+              <li class="nav-item" class="bg-dark" style="text-align: center;">
+                <a class="nav-link" class="bg-dark" href="#section-repas">Repas chauds</a>
+              </li>
+              <li class="nav-item" class="bg-dark" style="text-align: center;">
+                <a class="nav-link" class="bg-dark" href="#section-alimentaire">Alimentaire</a>
+              </li>
+              <li class="nav-item" class="bg-dark" style="text-align: center;">
+                <a class="nav-link" class="bg-dark" href="#section-refuge">Refuge</a>
+              </li>
+              <li class="nav-item" class="bg-dark" style="text-align: center;">
+                <a class="nav-link" class="bg-dark" href="#section-nos-plus">Nos ➕</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-particuliers">Avantage fiscaux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-team">Notre équipe</a>
+          </li>
 
-
-
-        <li class="nav-item">
-          <a class="nav-link" href="#section-particuliers">Avantage fiscaux</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section-team">Notre équipe</a>
-        </li>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <li class="nav-item">
-          <div style="background-color: green; border-radius: 15%; text-align: center;">
-            <a style="color: white;" class="nav-link" href="https://www.helloasso.com/associations/gulbana-france"
-              target="_blank">Faire un don</a>
-          </div>
-        </li>
-
-
-
-      </ul>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <div id="section-a-propos" class="container-fluid bg-white text-dark" style="padding:100px 20px; text-align: center;">
+  <div id="section-a-propos" class="container-fluid bg-white text-dark" style="padding:20px 20px; text-align: center;">
     <h1>À propos de nous</h1>
 
     <p>
@@ -94,14 +126,14 @@
     <!--TODO: aide à un refuge animalier en Turquie-->
 
     <!--TODO: Find a better way, using magins, offsets, ...-->
-    <br id="section-puits" />
     <br />
     <br />
+    <br />
 
 
 
 
-    <h2 style="text-align: center;">Puits</h2>
+    <h2 id="section-puits" style="padding:20px 20px; text-align: center;">Puits</h2>
     <p style="text-align: center; color: gray">
       Construction de Puits pour un accès à l'eau potable (Inde, Népal, Bangladesh, Sri-Lanka, Mauritanie )
     </p>
@@ -312,10 +344,10 @@
 
     <!--TODO: Find a better way, using magins, offsets, ...-->
     <!--TODO: Ajout des images carrés-->
-    <br id="section-arbres" />
     <br />
     <br />
-    <h2 style="text-align: center;">Plantations</h2>
+    <br />
+    <h2 style="padding:20px 20px; text-align: center;" id="section-arbres">Plantations</h2>
     <p style="text-align: center; color: gray">
       Plantation d'arbres fruitiers (Inde, Bangladesh, Tchad)
     </p>
@@ -509,10 +541,10 @@
 
 
     <!--TODO: Find a better way, using magins, offsets, ...-->
-    <br id="section-repas" />
     <br />
     <br />
-    <h2 style="text-align: center;">Repas chauds</h2>
+    <br />
+    <h2 style="padding:20px 20px; text-align: center;" id="section-repas">Repas chauds</h2>
     <p style="text-align: center; color: gray">
       Distribution de repas chauds aux orphelins des centres de Bangladesh, Inde et Niger
     </p>
@@ -558,10 +590,10 @@
 
 
     <!--TODO: Find a better way, using magins, offsets, ...-->
-    <br id="section-alimentaire" />
     <br />
     <br />
-    <h2 style="text-align: center;">Alimentaire</h2>
+    <br />
+    <h2 style="padding:20px 20px; text-align: center;" id="section-alimentaire">Alimentaire</h2>
     <p style="text-align: center; color: gray">
       Distribution de viande et de colis alimentaires (Yémen, Syrie, Gaza, Turquie, Bangladesh, Sri-Lanka,
       Mauritanie, Niger, Tchad, Inde)
@@ -587,10 +619,10 @@
 
 
     <!--TODO: Find a better way, using magins, offsets, ...-->
-    <br id="section-refuge" />
     <br />
     <br />
-    <h2 style="text-align: center;">Refuge</h2>
+    <br />
+    <h2 style="padding:20px 20px; text-align: center;" id="section-refuge">Refuge</h2>
     <p style="text-align: center; color: gray">
       Aide à un refuge animalier en Turquie
     </p>
@@ -611,10 +643,10 @@
 
 
 
-    <br id="section-nos-plus" />
     <br />
     <br />
-    <h3 style="text-align: center">Nos ➕:</h3>
+    <br />
+    <h3 style="text-align: center" id="section-nos-plus">Nos ➕:</h3>
     <ul>
       <li>étude de terrain</li>
       <li>qualité des matériaux neufs</li>
@@ -625,10 +657,10 @@
 
 
     <!--TODO: Éviter la répétition en utilisant les outils fourni par Svelte-->
-    <br id="section-particuliers">
+    <br>
     <br />
     <br />
-    <h3 style="text-align: center;">Avantage fiscaux</h3>
+    <h3 style="text-align: center;" id="section-particuliers">Avantage fiscaux</h3>
 
 
     <br><br><br>
@@ -678,9 +710,9 @@
 
     </div>
 
-    <br id="section-team">
+    <br>
     <br><br>
-    <div class="container-fluid bg-white text-dark">
+    <div class="container-fluid bg-white text-dark" id="section-team">
       <h1 style="text-align: center">Notre équipe</h1>
       <br>
 
